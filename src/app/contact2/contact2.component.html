@@ -1,0 +1,131 @@
+<header class="main-header clearfix" role="header">
+    <div class="logo">
+        <!-- <a href="#"><em>Grad</em> School</a> -->
+        <a href="#" routerLink="/index"><img src="assets/Images/logo4.png" alt="" style="width:27%; margin-left:20px;"></a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+            <li><a href="#" routerLink="/index">Home</a></li>
+            <li class="has-submenu"><a href="#section2">About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="Web_2.php" routerLink="/about">Who we are?</a></li>
+                    <li><a href="#nd" routerLink="/cloud">What we do?</a></li>
+                    <li><a href="Web_2.php">How it works?</a></li>
+                    <li><a href="Web_3.php" rel="sponsored" class="external">Our Services</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu"><a href="#section4">Services</a>
+                <ul class="sub-menu">
+                    <li><a href="#" routerLink="/cloud">Cloud</a></li>
+                    <li><a href="#" routerLink="/cyber">Cyber Services</a></li>
+                    <li><a href="#" routerLink="/iot">IoT</a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="#section5">Video</a></li> -->
+            <li><a href="footer3.php">Contact</a></li>
+            <li><a href="Login4.php" class="external">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<br><br><br>
+
+
+
+
+<section class="section contact" data-section="section6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Let’s Keep In Touch</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <!-- Do you need a working HTML contact-form script?
+                
+                Please visit https://templatemo.com/contact page -->
+
+                <form id="contact" ng-app="form" action="action.php" method="post" #contactForm="ngForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" ngModel placeholder="Your Name" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset>
+                                <input name="email" type="email" class="form-control" id="email" ngModel placeholder="Your Email" required="">
+                            </fieldset>
+                        </div>
+                        <!-- <div class="col-md-12">
+                            <fieldset>
+                                <input name="phone" type="number" class="form-control" id="phone" placeholder="Your phone Number" required="">
+                            </fieldset>
+                        </div> -->
+                        <div class="col-md-12">
+                            <fieldset>
+                                <textarea name="mess" rows="6" class="form-control" id="message" ngModel placeholder="Your message..." required=""></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="button" (click)="onSubmit(contactForm)">Send Message Now</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6 confo" style="color:#fff;">
+                <!-- <div id="map">
+                  <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div> -->
+                <h2 class="display-4">Contact Info:</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aut maiores totam dolorem, nesciunt accusantium sequi esse, vel alias eveniet impedit reprehenderit officiis vero et.</p>
+                <ul class="nk-contact-info">
+                    <li>
+                        <strong>Address:</strong> 10111 Santa Monica Boulevard, LA</li>
+                    <li>
+                        <strong>Phone:</strong> +44 987 065 908</li>
+                    <li>
+                        <strong>Email:</strong> info@Example.com</li>
+                    <li>
+                        <strong>Fax:</strong> +44 987 065 909</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer style="margin-top: 1px;">
+    <div class="container">
+        <div class="social-links">
+            <ul>
+                <li><a href="https://twitter.com/nkdevv"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/unvabdesign/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://dribbble.com/_nK"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="https://www.instagram.com/unvab/"><i class="fa fa-instagram"></i></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="div1 col-md-12 col-sm-12 col-lg-12 text-center" style=" background-color: #152036;">
+        <span class="" style="margin-top:25px;color:#fff;">Contact Us | Terms & Condition | Refund Policy | Privacy Policy</span>
+        <!-- <hr style="color:fff;"> --><br><br>
+        <span style="margin-bottom:10px; color:#fff;">© get-online-services.com.</span>
+    </div>
+</footer>

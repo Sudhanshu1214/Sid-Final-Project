@@ -1,0 +1,192 @@
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+
+    hamburger.addEventListener('click', () => {
+        //Animate Links
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle("fade");
+        });
+
+        //Hamburger Animation
+        hamburger.classList.toggle("toggle");
+    });
+</script>
+<section>
+
+
+    <nav>
+        <div class="logo">
+            <li>
+                <a routerLink="/home"><img src="assets/Images/logo.png" alt="Logo Image"></a>
+            </li>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a routerLink="/about">About</a> </li>
+            <li><a routerLink="/cards">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li> <a routerLink="/contact">Contact Us</a></li>
+            <li><button class="login-button" href="#">Login</button></li>
+            <li><a routerLink="/contact"><button class="join-button" href="#">Join</button></a></li>
+        </ul>
+    </nav>
+
+</section>
+
+<br><br><br><br><br>
+<div class="container">
+    <h2 style="color:black">Card Image</h2>
+
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="assets/Images/img_avatar1.png" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">Enter Your Details</h4>
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+
+                <br>
+                <button type="submit" class="btn btn-primary">Add Your Card</button>
+            </form>
+
+        </div>
+    </div>
+    <br>
+
+
+</div>
+
+<footer class="footer-area footer--light">
+    <div class="footer-big">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="footer-widget">
+                        <div class="widget-about">
+                            <li>
+                                <a routerLink="/home"><img src="assets/Images/logo.png" alt="" class="footer-logo"></a>
+                            </li>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, culpa. )</p>
+                            <ul class="contact-details">
+                                <li>
+                                    <span class="icon-earphones"></span> Call Us:
+                                    <a href="tel:344-755-111">7037760397</a>
+                                </li>
+                                <li>
+                                    <span class="icon-envelope-open"></span>
+                                    <a href="mailto:sudhanshukumar245a@gmail.com">imsid@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <div class="footer-menu footer-menu--1">
+                            <h4 class="footer-widget-title">Popular Category</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Products</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Join Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <div class="footer-menu">
+                            <h4 class="footer-widget-title">Our Company</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Products</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Join Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <div class="footer-menu no-padding">
+                            <h4 class="footer-widget-title">Help Support</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Products</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Join Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mini-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                        <p>© 2018
+                            <a href="#">Sid</a>. All rights reserved. Created by
+                            <a href="#">Sid Rajput</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

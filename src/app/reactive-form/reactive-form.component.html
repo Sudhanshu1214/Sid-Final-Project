@@ -1,0 +1,20 @@
+<form [formGroup]="loginForm" (ngSubmit)="collectData()">
+
+  Name<input type="text"  formControlName="username" placeholder="enter name" name="name"><br>
+  <span *ngIf="loginForm.get('username').touched && loginForm.get('username').hasError('required')" class="error">Plz enter valid name</span>
+  <br><br>
+  Password<input type="text" formControlName="userpassword" placeholder="enter password" name="password"><br>
+  <span *ngIf="loginForm.get('userpassword').touched && loginForm.get('userpassword').hasError('required')" class="error">Plz enter valid password</span>
+<br><br>
+
+Email<input type="email"  formControlName="useremail" placeholder="enter email" name="email"><br>
+<span *ngIf="loginForm.get('useremail').touched && loginForm.get('useremail').hasError('required')" class="error">Plz enter valid email address</span>
+<span *ngIf="loginForm.get('useremail').touched && loginForm.get('useremail').hasError('minlength')" class="error">Plz enter valid email address</span>
+<span *ngIf="loginForm.get('useremail').touched && loginForm.get('useremail').hasError('maxlength')" class="error">Plz enter valid email address</span>
+
+<br><br>
+  <button type="submit" [disabled]="!loginForm.valid" class="btn1 btn btn-primary" >Login</button>
+
+
+
+</form>

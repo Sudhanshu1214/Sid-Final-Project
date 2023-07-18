@@ -1,0 +1,265 @@
+<!-- <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+
+    hamburger.addEventListener('click', () => {
+        //Animate Links
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle("fade");
+        });
+
+        //Hamburger Animation
+        hamburger.classList.toggle("toggle");
+    });
+</script> -->
+<!-- <section>
+
+ nh
+    <nav>
+        <div class="logo">
+            <li>
+                <a routerLink="/home"><img src="assets/Images/logo.png" alt="Logo Image"></a>
+            </li>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a routerLink="/about">About</a>
+            </li>
+            <li><a routerLink="/cards">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li> <a routerLink="/contact">Contact Us</a></li>
+            <li><button class="login-button" href="#">Login</button></li>
+            <li><a routerLink="/contact"><button class="join-button" href="#">Join</button></a></li>
+        </ul>
+    </nav>
+
+</section> -->
+
+<header class="main-header clearfix" role="header">
+    <div class="logo">
+        <!-- <a href="#"><em>Grad</em> School</a> -->
+        <a href="#" routerLink="/index"><img src="assets/Images/logo4.png" alt="" style="width:27%; margin-left:20px;"></a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+            <li><a href="#" routerLink="/index">Home</a></li>
+            <li class="has-submenu"><a href="#section2">About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="Web_2.php" routerLink="/about">Who we are?</a></li>
+                    <li><a href="#nd" routerLink="/cloud">What we do?</a></li>
+                    <li><a href="Web_2.php">How it works?</a></li>
+                    <li><a href="Web_3.php" rel="sponsored" class="external">Our Services</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu"><a href="#section4">Services</a>
+                <ul class="sub-menu">
+                    <li><a href="#" routerLink="/cloud">Cloud</a></li>
+                    <li><a href="#" routerLink="/cyber">Cyber Services</a></li>
+                    <li><a href="#" routerLink="/iot">IoT</a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="#section5">Video</a></li> -->
+            <li><a href="#" routerLink="/contact2">Contact</a></li>
+            <li><a href="Login4.php" class="external">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="bgvideo">
+    <video autoplay muted loop id="myVideo">
+            <source src="assets/Images/bgvideo.mp4" type="video/mp4">
+        </video>
+</div>
+<div class="head">
+    <h1 style="font-size: 300px;">Hello!</h1>
+    <h3>We are ready for you always</h3>
+    <button class="btn">Discover</button>
+</div>
+
+
+<!-- <div class="bg conatiner-fluid"><br><br><br><br><br><br>
+      <h1 style="color:#ffffff; font-size: 200px;text-align: center; margin-top: 180px;">Welcome</h1>
+      <h5 style="color:#ffffff; font-size: 40px;text-align: center;">We are here to join you</h5>
+  </div><br> -->
+<br><br><br><br><br><br>
+<div class="bg-white" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-xs-center">
+                <div class="nk-gap-4 mt-9"></div>
+
+                <h2 class="display-4" style="color: black; font-family: Playfair Display,serif;">About Our Agency</h2>
+                <div class="nk-gap mnt-5"></div>
+
+                <p>We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps. Clever use of technology and lean processes enable us to work faster and smarter.
+                </p>
+
+                <img src="assets/Images/about-me-signature.png" style="margin-left:200px; margin-top:30px;" alt="" class="nk-img-fit">
+
+                <div class="nk-gap-4 mt-25"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container mx-auto py-8 ">
+
+    <div class="flex flex-col text-center gap-4 mb-8 p-4">
+
+        <div class="text-purple-600 text-lg font-bold">Our team</div>
+
+        <div class="text-gray-900 text-3xl md:text-4xl font-bold">Some of the people you'll be working with</div>
+
+        <div class="text-gray-600 md:text-lg">We're a 100% remote team spread all across the world. Join us!</div>
+
+    </div>
+
+
+    <div class="d-flex flex-row items-center justify-center flex-wrap gap-4 p-4 " style="margin-left: 30px;">
+
+        <div class="card">
+
+            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+            <div class="text-gray-900 text-lg font-bold">Olivia Rhye</div>
+
+            <div class="text-purple-600">Cloud Service Manegar</div>
+
+            <div class="text-gray-600">Hello I am Olivia Rhye and I will help to guide in cloud services.</div>
+
+            <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+            <div class="text-gray-900 text-lg font-bold">Phoenix Baker</div>
+
+            <div class="text-purple-600">CS Manegar</div>
+
+            <div class="text-gray-600">Hello I am Baker and I will help to guide in cyber services.</div>
+
+            <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/Images/james1.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+            <div class="text-gray-900 text-lg font-bold">James Cob</div>
+
+            <div class="text-purple-600">IoT Engineer</div>
+
+            <div class="text-gray-600">Hello I am James Cob and I will help to guide in IoT services.</div>
+
+            <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/Images/robert.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+            <div class="text-gray-900 text-lg font-bold">Robert</div>
+
+            <div class="text-purple-600">Cognitive Offier</div>
+
+            <div class="text-gray-600">Hello I am Robert and I will help to guide in Congnitive services.</div>
+
+            <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/Images/jennifer.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+            <div class="text-gray-900 text-lg font-bold">Jennifer</div>
+
+            <div class="text-purple-600">Data Scientist</div>
+
+            <div class="text-gray-600">Hello I am Jennifer and I will help to guide in Data and Analytics services.</div>
+
+            <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/Images/john.jpg" class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110">
+
+            <div class="text-gray-900 text-lg font-bold">John Wick</div>
+
+            <div class="text-purple-600">Consulting Offier</div>
+
+            <div class="text-gray-600">Hello I am John Wick and I will help to guide to grow your ideas.</div>
+
+            <div class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600">
+                <i class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+                <i class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"></i>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+<footer style="margin-top: 1px;">
+    <div class="container">
+        <div class="social-links">
+            <ul>
+                <li><a href="https://twitter.com/nkdevv"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/unvabdesign/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://dribbble.com/_nK"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="https://www.instagram.com/unvab/"><i class="fa fa-instagram"></i></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="div1 col-md-12 col-sm-12 col-lg-12 text-center" style=" background-color: #152036;">
+        <span class="" style="margin-top:25px;color:#fff;">Contact Us | Terms & Condition | Refund Policy | Privacy Policy</span>
+        <!-- <hr style="color:fff;"> --><br><br>
+        <span style="margin-bottom:10px; color:#fff;">© get-online-services.com.</span>
+    </div>
+</footer>

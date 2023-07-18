@@ -1,0 +1,43 @@
+.box1 {
+    /* border: 2px solid red; */
+    width: 1200px;
+    height: 630px;
+}
+
+.box1 img {
+    margin-top: 40px;
+    width: 650px;
+    height: 80%;
+}
+
+.box2 {
+    /* border: 2px solid red; */
+    width: 1200px;
+    height: 630px;
+}
+
+.welcome {
+    margin-top: 150px;
+    font-size: 30px;
+}
+
+.side_register {
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 25px;
+    width: 180px;
+    height: 80px;
+    background-color: blueviolet;
+    color: #ffffff;
+    border-radius: 40px;
+}
+
+.form input {
+    font-size: 20px;
+}
+
+span {
+    color: blueviolet;
+}

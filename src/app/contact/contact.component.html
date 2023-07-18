@@ -1,0 +1,216 @@
+<section>
+
+
+    <nav>
+        <div class="logo">
+            <li>
+                <a routerLink="/home"><img src="assets/Images/logo.png" alt="Logo Image"></a>
+            </li>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/about">About</a>
+            </li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li> <a routerLink="/contact">Contact Us</a></li>
+            <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">Join</button></li>
+        </ul>
+    </nav>
+
+</section>
+<br><br><br><br>
+
+<section class="connect">
+    <div class="conn container-fluid" ngapp="head" ng-controller="headController">
+        <h1 style="color:#000000; font-size: 150px;text-align: center;">Welcome</h1>
+        <h5 style="color:#000000; font-size: 40px;text-align: center;">We are waiting for you</h5>
+    </div>
+</section>
+
+<!--==================Also is used for Pre-Filled values...=============================-->
+
+
+<div class="container-fluid" ng-app="">
+    <div class="row">
+        <div class="box1 col-md-6">
+            <form ng-app="form" #contactForm="ngForm">
+                <div class="form-group">
+                    <label for="">Name <sup style="color:red; font-size: 15px;">*</sup> </label><br>
+                    <input required #name="ngModel" type="text" placeholder="Enter Name" ngModel class="form-control" name="username" [ngModel]="userData.Name">
+                    <span *ngIf="name.invalid && name.touched" class="error">This field is required</span><br>
+                </div>
+                <div class="form-group">
+                    <label for="">Email address <sup style="color:red; font-size: 15px;">*</sup> </label><br>
+                    <input required type="email" #email="ngModel" placeholder="Enter Email" email ngModel class="form-control" name="useremail" [ngModel]="userData.Email">
+                    <span *ngIf="email.invalid && email.touched" class="error">Plz enter a valid email</span><br>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="">Password <sup style="color:red; font-size: 15px;">*</sup> </label><br>
+                    <input required #pass="ngModel" minlength="3" maxlength="10" type="password" placeholder="Enter Password" ngModel class="form-control" name="userpassword" [ngModel]="userData.Password">
+                    <span *ngIf="pass.invalid && pass.touched" class="error">This field is required</span><br>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="">Address <sup style="color:red; font-size: 15px;" >*</sup> </label><br>
+                    <input pattern="[a-zA-Z ]*" #address="ngModel" type="text" placeholder="Enter Address" ngModel class="form-control" name="useraddress" [ngModel]="userData.Address">
+                    <span *ngIf="address.invalid && address.touched" class="error">plz provide the valid address</span><br>
+
+                </div>
+
+
+                <!-- (ngSubmit)="onSubmit(contactForm.value)" -->
+
+                <button [disabled]="contactForm.invalid" (click)="onSubmit(contactForm)" class="btn1 btn btn-primary">Submit</button>
+
+                <a routerLink="/views"> <button [disabled]="contactForm.invalid" class="btn1 btn btn-primary">Views</button></a>
+
+
+
+                <!-- <button [disabled]="contactForm.invalid" (click)="toggleTag()" class="btn1 btn btn-primary">Submit</button> -->
+                <!-- <h2 *ngIf="showMe">Thank You for Contacting Us</h2> -->
+                <button [disabled]="contactForm.invalid" (click)="onSubmit(contactForm.value)" class="btn2 btn btn-danger">Delete</button><br><br>
+
+
+                <h2 *ngIf="showMe" style="margin-left: 100px;">Thank You for Contacting Us</h2>
+
+            </form>
+        </div>
+        <div class="box2 col-md-6">
+            <form action="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus architecto numquam voluptate maxime sequi placeat ex similique modi laboriosam aperiam consequatur iure at magnam, enim, quod et praesentium minima qui.</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- <footer class="footer-area footer--light">
+  <div class="footer-big">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-widget">
+            <div class="widget-about">
+              <li><a routerLink="/home"><img src="assets/Images/logo.png" alt="" class="footer-logo"></a></li>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, culpa.  )</p>
+              <ul class="contact-details">
+                <li>
+                  <span class="icon-earphones"></span> Call Us:
+                  <a href="tel:344-755-111">7037760397</a>
+                </li>
+                <li>
+                  <span class="icon-envelope-open"></span>
+                  <a href="mailto:sudhanshukumar245a@gmail.com">imsid@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-widget">
+            <div class="footer-menu footer-menu--1">
+              <h4 class="footer-widget-title">Popular Category</h4>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Products</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Join Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-widget">
+            <div class="footer-menu">
+              <h4 class="footer-widget-title">Our Company</h4>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Products</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Join Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-widget">
+            <div class="footer-menu no-padding">
+              <h4 class="footer-widget-title">Help Support</h4>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Products</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Join Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="mini-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-text">
+            <p>© 2018
+              <a href="#">Sid</a>. All rights reserved. Created by
+              <a href="#">Sid Rajput</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
